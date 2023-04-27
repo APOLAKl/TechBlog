@@ -1,12 +1,19 @@
 const router = require('express').Router();
-const { Blog } = require("../../models");
+const { Blog, User, Comment } = require("../../models");
 const withAuth = require("../../utils/auth");
 
 // GET ALL --> /api/blogs/
 router.get("/", (req, res) => {
   Blog.findAll({
-    attributes: ['id', 'blog_title', 'blog_post']
-
+    attributes: ['id', 'title', 'content', 'date_created'],
+    include: [{
+      model: User,
+      attributes: ['name'],
+    },
+    {
+      model: Comment,
+      attributes: ['id', 'comment', 'date_created', 'user_id', 'blog_id']
+    }]
   })
   .then(results => {
     res.json(results)
@@ -15,7 +22,18 @@ router.get("/", (req, res) => {
 
 // GEt by ID
 router.get("/:id", (req, res) => {
-  Blog.findByPk(req.params.id)
+  Blog.findByPk(req.params.id, {
+    attributes: ['id', 'title', 'content', 'date_created'],
+    include: [{
+      model: User,
+      attributes: ['name'],
+    },
+    {
+      model: Comment,
+      attributes: ['id', 'comment', 'date_created', 'user_id', 'blog_id']
+    }]
+  }
+)
   .then(results => {
     res.json(results)
   })
