@@ -1,10 +1,14 @@
 [
   {
-    "title": "Title Test",
-    "comment": "This is a test comment."
+    "blog_title": "First Test",
+    "blog_post": "This is the FIRST blog."
   },
   {
-    "title": "Title Test2",
-    "comment": "This is a test comment2."
+    "blog_title": "Second Test",
+    "blog_post": "This is the SECOND blog post."
+  },
+  {
+    "blog_title": "Third Test",
+    "blog_post": "This is the THIRD blog post."
   }
 ]
