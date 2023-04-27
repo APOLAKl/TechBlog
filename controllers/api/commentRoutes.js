@@ -14,8 +14,7 @@ router.get("/", (req, res) => {
 // Create (POST comment)
 router.post("/", withAuth, (req, res) => {
   Comment.create({
-    title: req.body.title,
-    content: req.body.content,
+    ...req.body,
     user_id: req.session.user_id
   })
   .then(results => {

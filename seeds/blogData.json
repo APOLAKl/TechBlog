@@ -1,14 +1,14 @@
 [
   {
-    "blog_title": "First Test",
-    "blog_post": "This is the FIRST blog."
+    "title": "First Test",
+    "content": "This is the FIRST blog."
   },
   {
-    "blog_title": "Second Test",
-    "blog_post": "This is the SECOND blog post."
+    "title": "Second Test",
+    "content": "This is the SECOND blog post."
   },
   {
-    "blog_title": "Third Test",
-    "blog_post": "This is the THIRD blog post."
+    "title": "Third Test",
+    "content": "This is the THIRD blog post."
   }
 ]
