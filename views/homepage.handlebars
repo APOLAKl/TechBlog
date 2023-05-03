@@ -1,0 +1,11 @@
+<div>
+  {{#each blogs as |blog| }}
+      <div class="blog-card">
+        <a href="/blog/{{blog.id}}"><h2>{{blog.title}}</h2></a>
+        <p>{{blog.content}}</p>
+        <div class="blog-card-footer">
+          <h4>- {{blog.user.name}}</h4>
+        </div>
+     </div>
+    {{/each}}
+</div>
