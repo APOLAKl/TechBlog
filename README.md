@@ -89,7 +89,7 @@ This project should look like this:
 
 
 ## 🔗 Link to GitHub Repo Page
-https://https://github.com/APOLAKl/NoteTaker   [![APOLAKl Repo Page](https://img.shields.io/github/stars/APOLAKl/NoteTaker?style=social)](https://https://github.com/APOLAKl/NoteTaker)
+https://github.com/APOLAKl/TechBlog   [![APOLAKl Repo Page](https://img.shields.io/github/stars/APOLAKl/TechBlog?style=social)](https://github.com/APOLAKl/TechBlog)
 
 
 ## 🔗Link to Live Heroku - in progress
